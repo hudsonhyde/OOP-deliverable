@@ -1,11 +1,16 @@
 import CellPhoneClass as cp
 
 def main():
-
-    manufacturer = input('What is your phone manufacturer: ')
-
-    model = input('What is your phone model: ')
-
+    
+    phone = cp.CellPhone('apple', 'Iphone 15', 1099) #This is the instance
+    
+    
     price = input('What is your phone price: ')
+    phone.set_retail_price(price)
 
-    phone = cp.CellPhone()
+
+    print(f'Phone Manufacturer: {phone.get_manufact()}')
+    print(f'Phone Model: {phone.get_model()}')
+    print(f'Phone price: ${phone.get_retail_price()}')
+
+main()
