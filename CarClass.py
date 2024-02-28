@@ -13,11 +13,6 @@ class Car:
         if self.__speed == 0:
             self.__speed = 0
 
-    def get_year(self):
-        return self.__year
-
-    def get_make(self):
-        return self.__make
 
     def get_speed(self):
         return self.__speed

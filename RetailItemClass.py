@@ -4,15 +4,6 @@ class RetailItem:
         self.__description = d
         self.__units = u
         self.__price = p
-
-    def set_description(self, clothing):
-        self.__description = clothing
-
-    def set_units(self, inventory):
-        self.__units = inventory
-    
-    def set_price(self, cost):
-        self.units = cost
     
     def get_description(self):
         return self.__description
